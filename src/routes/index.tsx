@@ -143,7 +143,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="absolute inset-y-0 right-0 h-full w-full md:w-1/2">
+        <div className="relative h-[320px] w-full md:absolute md:inset-y-0 md:right-0 md:h-full md:w-1/2">
           <img
             src={heroPizzaWide}
             alt="Pizza margherita artesanal da Brandi Pizzerie"
