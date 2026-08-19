@@ -16,6 +16,7 @@ import { Footer } from "@/components/brandi/Footer";
 import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
 import heroPizza from "@/assets/hero-pizza.jpg";
+import heroPizzaWide from "@/assets/hero-pizza-wide.jpg";
 import dough from "@/assets/dough.jpg";
 import {
   alcoholicDrinks,
@@ -105,8 +106,8 @@ function Index() {
 
       {/* HERO */}
       <section id="inicio" className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 py-14 md:grid-cols-2 md:gap-12 lg:gap-16 lg:px-8 lg:py-20">
-          <div>
+        <div className="relative mx-auto grid max-w-[1400px] items-center gap-10 py-0 md:grid-cols-2 md:gap-0">
+          <div className="px-4 py-14 md:py-20 lg:pl-8 lg:pr-14 lg:py-24">
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
             </span>
@@ -138,13 +139,13 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative min-h-[320px] w-full self-stretch md:absolute md:inset-y-0 md:right-0 md:w-1/2 md:min-h-full">
             <img
-              src={heroPizza}
+              src={heroPizzaWide}
               alt="Pizza margherita artesanal da Brandi Pizzerie"
               width={1280}
-              height={1280}
-              className="w-full object-cover"
+              height={1600}
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
           </div>
         </div>
