@@ -46,7 +46,7 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
             className="p-2 text-forest xl:hidden"
           >
-            {open ? <Menu className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
@@ -75,7 +75,6 @@ export function Header() {
           </nav>
         </div>
       )}
-      <X className="hidden" />
     </header>
   );
 }
