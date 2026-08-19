@@ -164,14 +164,14 @@ function Index() {
               no primeiro pedaço.”
             </p>
           </div>
-          <div className="relative lg:mt-16">
+          <div className="relative">
             <img
               src={dough}
               alt="Preparo da massa artesanal"
               loading="lazy"
               width={1008}
               height={1200}
-              className="w-full object-cover"
+              className="h-[420px] w-full object-cover lg:h-[520px]"
             />
             <div className="absolute -bottom-4 -left-4 hidden h-24 w-24 border-2 border-brand-red lg:block" />
           </div>
