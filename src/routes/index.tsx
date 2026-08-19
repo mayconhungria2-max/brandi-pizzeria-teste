@@ -105,9 +105,12 @@ function Index() {
       <Header />
 
       {/* HERO */}
-      <section id="inicio" className="relative overflow-hidden">
-        <div className="relative mx-auto grid max-w-[1400px] items-center gap-10 py-0 md:grid-cols-2 md:gap-0">
-          <div className="px-4 py-14 md:py-20 lg:pl-8 lg:pr-14 lg:py-24">
+      <section
+        id="inicio"
+        className="relative min-h-[520px] overflow-hidden md:min-h-[640px] lg:min-h-[720px]"
+      >
+        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 md:grid-cols-2">
+          <div className="relative z-10 px-4 py-14 md:py-20 lg:pl-8 lg:pr-14 lg:py-24">
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
             </span>
@@ -138,16 +141,16 @@ function Index() {
               </a>
             </div>
           </div>
+        </div>
 
-          <div className="relative min-h-[320px] w-full self-stretch md:absolute md:inset-y-0 md:right-0 md:w-1/2 md:min-h-full">
-            <img
-              src={heroPizzaWide}
-              alt="Pizza margherita artesanal da Brandi Pizzerie"
-              width={1280}
-              height={1600}
-              className="absolute inset-0 h-full w-full object-cover object-center"
-            />
-          </div>
+        <div className="absolute inset-y-0 right-0 h-full w-full md:w-1/2">
+          <img
+            src={heroPizzaWide}
+            alt="Pizza margherita artesanal da Brandi Pizzerie"
+            width={1280}
+            height={1600}
+            className="h-full w-full object-cover object-center"
+          />
         </div>
       </section>
 
