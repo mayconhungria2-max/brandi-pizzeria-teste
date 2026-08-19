@@ -105,7 +105,7 @@ function Index() {
 
       {/* HERO */}
       <section id="inicio" className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 py-14 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-20">
+        <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 py-14 md:grid-cols-2 md:gap-12 lg:gap-16 lg:px-8 lg:py-20">
           <div>
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
