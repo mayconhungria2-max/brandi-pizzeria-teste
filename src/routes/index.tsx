@@ -98,7 +98,6 @@ function MenuRow({
 
 function Index() {
   const [selected, setSelected] = useState<Pizza | null>(null);
-  const all = [...pizzas, ...sweetPizzas];
 
   return (
     <div className="min-h-screen border-l-0 bg-cream lg:border-l-[10px] lg:border-forest">
@@ -487,7 +486,6 @@ function Index() {
       <Footer />
       <WhatsAppFab />
       <PizzaDialog pizza={selected} onClose={() => setSelected(null)} />
-      <span className="hidden">{all.length}</span>
     </div>
   );
 }
