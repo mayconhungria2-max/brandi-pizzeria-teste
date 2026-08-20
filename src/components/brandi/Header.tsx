@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Pizza } from "lucide-react";
-import logoAsset from "@/assets/brandi-logo-3d-v2.png.asset.json";
+import logoAsset from "@/assets/brandi-logo-3d-v3.png.asset.json";
 import { navLinks, whatsappLink } from "@/lib/brandi";
 
 export function Header() {
