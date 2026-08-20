@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/brandi-logo-green.png.asset.json";
+import logoAsset from "@/assets/brandi-logo-mark-light.png.asset.json";
 import { Instagram, MessageCircle } from "lucide-react";
 import {
   INSTAGRAM,
@@ -18,7 +18,7 @@ export function Footer() {
             loading="lazy"
             width={640}
             height={640}
-            className="h-24 w-24 rounded-2xl object-cover"
+            className="h-24 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/70">
             Pizza artesanal, bons ingredientes e momentos para compartilhar.
