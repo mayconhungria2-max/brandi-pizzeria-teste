@@ -37,7 +37,7 @@ export function Header() {
             href={whatsappLink()}
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-brand-red px-6 py-3.5 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase shadow-[0_12px_28px_-14px_color-mix(in_oklab,var(--brand-red)_70%,transparent)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-red-dark sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-brand-red px-6 py-3.5 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-red-dark sm:inline-flex"
           >
             <Pizza className="h-4 w-4" /> Pedir online
           </a>
