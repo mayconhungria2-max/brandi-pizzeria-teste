@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/brandi-logo-3d-v3.png.asset.json";
+import logoAsset from "@/assets/brandi-logo-3d-white.png.asset.json";
 import { Instagram, MessageCircle } from "lucide-react";
 import {
   INSTAGRAM,
