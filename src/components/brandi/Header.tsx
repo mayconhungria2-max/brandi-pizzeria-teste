@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Pizza } from "lucide-react";
-import logoAsset from "@/assets/brandi-logo-3d.png.asset.json";
+import logoAsset from "@/assets/brandi-logo-3d-v2.png.asset.json";
 import { navLinks, whatsappLink } from "@/lib/brandi";
 
 export function Header() {
@@ -16,7 +16,9 @@ export function Header() {
           <img
             src={logoAsset.url}
             alt="Brandi Pizzerie"
-            className="h-16 w-auto drop-shadow-[0_8px_20px_rgba(0,0,0,0.18)] sm:h-20 lg:h-24"
+            width={1024}
+            height={1024}
+            className="h-20 w-auto drop-shadow-[0_10px_24px_rgba(0,0,0,0.16)] sm:h-24 lg:h-32"
           />
         </a>
 
