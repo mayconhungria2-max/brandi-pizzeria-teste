@@ -151,14 +151,18 @@ function Index() {
             height={1600}
             className="h-full w-full object-cover object-center"
           />
-          {/* fade suave para integrar a foto ao fundo, sem borda quadrada */}
+          {/* fades suaves em todas as bordas para integrar a foto ao fundo */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-cream to-transparent md:inset-y-0 md:left-0 md:h-full md:w-32 md:bg-gradient-to-r"
+            className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream to-transparent md:w-40"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-cream to-transparent md:hidden"
+            className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-cream to-transparent md:h-28"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-cream to-transparent md:h-28"
           />
         </div>
       </section>
