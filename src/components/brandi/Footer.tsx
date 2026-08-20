@@ -1,4 +1,4 @@
-import logo from "@/assets/brandi-logo-dark.png";
+import logoAsset from "@/assets/brandi-logo-3d.png.asset.json";
 import { Instagram, MessageCircle } from "lucide-react";
 import {
   INSTAGRAM,
@@ -13,11 +13,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1400px] gap-12 px-4 py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img
-            src={logo}
+            src={logoAsset.url}
             alt="Brandi Pizzerie"
             loading="lazy"
-            width={1024}
-            height={768}
+            width={1536}
+            height={1024}
             className="h-20 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/70">
