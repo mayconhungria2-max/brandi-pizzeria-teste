@@ -190,7 +190,6 @@ function Index() {
               height={1200}
               className="h-[420px] w-full object-cover lg:h-[520px]"
             />
-            <div className="absolute -bottom-4 -left-4 hidden h-24 w-24 border-2 border-brand-red lg:block" />
           </div>
         </div>
       </section>
