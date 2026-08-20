@@ -198,3 +198,9 @@
   margin: 0 0.5rem;
   transform: translateY(-0.25rem);
 }
+
+#lovable-badge,
+button[aria-label*="Lovable"],
+div[class*="lovable"] {
+  display: none !important;
+}
