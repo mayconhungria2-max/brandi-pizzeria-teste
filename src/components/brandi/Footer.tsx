@@ -16,9 +16,9 @@ export function Footer() {
             src={logoAsset.url}
             alt="Brandi Pizzerie"
             loading="lazy"
-            width={1536}
-            height={1024}
-            className="h-20 w-auto"
+            width={640}
+            height={640}
+            className="h-24 w-24 rounded-2xl object-cover"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/70">
             Pizza artesanal, bons ingredientes e momentos para compartilhar.
