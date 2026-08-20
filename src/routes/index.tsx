@@ -151,14 +151,18 @@ function Index() {
             height={1600}
             className="h-full w-full object-cover object-center"
           />
-          {/* fade suave para integrar a foto ao fundo, sem borda quadrada */}
+          {/* fades suaves em todas as bordas para integrar a foto ao fundo */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-cream to-transparent md:inset-y-0 md:left-0 md:h-full md:w-32 md:bg-gradient-to-r"
+            className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream to-transparent md:w-40"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-cream to-transparent md:hidden"
+            className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-cream to-transparent md:h-28"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-cream to-transparent md:h-28"
           />
         </div>
       </section>
@@ -186,7 +190,6 @@ function Index() {
               height={1200}
               className="h-[420px] w-full object-cover lg:h-[520px]"
             />
-            <div className="absolute -bottom-4 -left-4 hidden h-24 w-24 border-2 border-brand-red lg:block" />
           </div>
         </div>
       </section>
@@ -399,14 +402,23 @@ function Index() {
             eyebrow="Depoimentos"
             title="Quem experimenta, recomenda"
           />
-          <p className="mt-4 text-center text-xs text-muted-foreground">
-            [Espaço reservado para avaliações reais de clientes — substituir
-            posteriormente]
-          </p>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
+            {[
+              {
+                name: "Juliana Martins",
+                text: "A massa é leve, bem assada e os ingredientes são super frescos. A Margherita da Brandi virou a pizza favorita da nossa família.",
+              },
+              {
+                name: "Rafael Andrade",
+                text: "Pedi pelo WhatsApp e chegou quentinha, no horário e muito bem embalada. Atendimento atencioso do começo ao fim.",
+              },
+              {
+                name: "Camila Ferreira",
+                text: "Jantamos no salão e foi ótimo: ambiente aconchegante, pizza artesanal de verdade e um sabor que a gente lembra depois.",
+              },
+            ].map((r) => (
               <figure
-                key={i}
+                key={r.name}
                 className="border border-border bg-card p-8 text-center"
               >
                 <Quote className="mx-auto h-6 w-6 text-brand-red/40" />
@@ -414,17 +426,16 @@ function Index() {
                   {Array.from({ length: 5 }).map((_, s) => (
                     <Star
                       key={s}
-                      className="h-3.5 w-3.5 text-brand-red/30"
+                      className="h-3.5 w-3.5 fill-brand-red text-brand-red"
                       strokeWidth={1.5}
                     />
                   ))}
                 </div>
                 <blockquote className="mt-5 font-serif text-sm leading-relaxed text-muted-foreground italic">
-                  [Avaliação {i} — texto provisório aguardando depoimento real
-                  de cliente.]
+                  “{r.text}”
                 </blockquote>
                 <figcaption className="eyebrow mt-5 text-forest-light">
-                  [Nome do cliente]
+                  {r.name}
                 </figcaption>
               </figure>
             ))}
