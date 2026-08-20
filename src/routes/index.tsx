@@ -143,13 +143,22 @@ function Index() {
           </div>
         </div>
 
-        <div className="relative h-[320px] w-full md:absolute md:inset-y-0 md:right-0 md:h-full md:w-1/2">
+        <div className="relative h-[320px] w-full md:absolute md:inset-y-0 md:right-0 md:h-full md:w-[54%]">
           <img
             src={heroPizzaWide}
             alt="Pizza margherita artesanal da Brandi Pizzerie"
             width={1280}
             height={1600}
             className="h-full w-full object-cover object-center"
+          />
+          {/* fade suave para integrar a foto ao fundo, sem borda quadrada */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-cream to-transparent md:inset-y-0 md:left-0 md:h-full md:w-32 md:bg-gradient-to-r"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-cream to-transparent md:hidden"
           />
         </div>
       </section>
