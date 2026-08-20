@@ -18,7 +18,7 @@ export function Header() {
             alt="Brandi Pizzerie"
             width={1100}
             height={1100}
-            className="block h-16 w-auto sm:h-20 lg:h-24"
+            className="block h-20 w-auto sm:h-24 lg:h-32"
           />
         </a>
 
