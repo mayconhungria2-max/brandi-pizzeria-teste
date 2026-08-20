@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Pizza } from "lucide-react";
-import logoAsset from "@/assets/brandi-logo-3d-v3.png.asset.json";
+import logoAsset from "@/assets/brandi-logo-green.png.asset.json";
 import { navLinks, whatsappLink } from "@/lib/brandi";
 
 export function Header() {
@@ -13,13 +13,15 @@ export function Header() {
           href="#inicio"
           className="group block shrink-0 transition-transform duration-300 hover:-translate-y-0.5"
         >
-          <img
-            src={logoAsset.url}
-            alt="Brandi Pizzerie"
-            width={1024}
-            height={1024}
-            className="h-20 w-auto drop-shadow-[0_10px_24px_rgba(0,0,0,0.16)] sm:h-24 lg:h-32"
-          />
+          <span className="block overflow-hidden rounded-2xl ring-1 ring-forest/15 shadow-[0_10px_24px_rgba(0,0,0,0.14)] lg:rounded-3xl">
+            <img
+              src={logoAsset.url}
+              alt="Brandi Pizzerie"
+              width={640}
+              height={640}
+              className="block h-16 w-16 object-cover sm:h-20 sm:w-20 lg:h-24 lg:w-24"
+            />
+          </span>
         </a>
 
         <div className="flex items-center justify-end gap-4 lg:gap-8">
