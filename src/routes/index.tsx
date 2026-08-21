@@ -107,10 +107,10 @@ function Index() {
       {/* HERO */}
       <section
         id="inicio"
-        className="relative min-h-[520px] overflow-hidden md:min-h-[640px] lg:min-h-[720px]"
+        className="relative min-h-[520px] overflow-hidden md:min-h-[600px] lg:min-h-[720px]"
       >
-        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 md:grid-cols-2">
-          <div className="relative z-10 px-4 py-14 md:py-20 lg:pl-8 lg:pr-14 lg:py-24">
+        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 lg:grid-cols-2">
+          <div className="relative z-10 px-4 py-14 md:py-16 lg:pl-8 lg:pr-14 lg:py-24">
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
             </span>
@@ -143,7 +143,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="relative h-[320px] w-full md:absolute md:inset-y-0 md:right-0 md:h-full md:w-[54%]">
+        <div className="relative h-[320px] w-full md:h-[420px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-[54%]">
           <img
             src={heroPizzaWide}
             alt="Pizza margherita artesanal da Brandi Pizzerie"
@@ -154,7 +154,7 @@ function Index() {
           {/* fades suaves em todas as bordas para integrar a foto ao fundo */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream to-transparent md:w-40"
+            className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream to-transparent lg:w-40"
           />
           <div
             aria-hidden
