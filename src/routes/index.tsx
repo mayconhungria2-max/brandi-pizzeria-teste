@@ -17,7 +17,7 @@ import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
 import heroPizza from "@/assets/hero-pizza.jpg";
 import heroPizzaWide from "@/assets/hero-pizza-wide.jpg";
-import dough from "@/assets/dough.jpg";
+import ovenPizza from "@/assets/oven-pizza.jpg";
 import {
   alcoholicDrinks,
   drinks,
@@ -184,8 +184,8 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={dough}
-              alt="Preparo da massa artesanal"
+              src={ovenPizza}
+              alt="Pizza artesanal saindo do forno a lenha"
               loading="lazy"
               width={1008}
               height={1200}
