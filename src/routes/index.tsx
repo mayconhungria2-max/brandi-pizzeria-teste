@@ -17,7 +17,7 @@ import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
 import heroPizza from "@/assets/hero-pizza.jpg";
 import heroPizzaWide from "@/assets/hero-pizza-wide.jpg";
-import dough from "@/assets/dough.jpg";
+import ovenPizza from "@/assets/oven-pizza.jpg";
 import {
   alcoholicDrinks,
   drinks,
