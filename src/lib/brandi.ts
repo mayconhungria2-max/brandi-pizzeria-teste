@@ -153,3 +153,49 @@ export const navLinks = [
   { label: "DELIVERY", href: "#horarios" },
   { label: "CONTATO", href: "#contato" },
 ];
+export type Flavor = { name: string; ingredients: string[] };
+
+export const savoryFlavors: Flavor[] = [
+  { name: "Atum", ingredients: ["Pedaços de atum no azeite", "Cebolas frescas", "Orégano", "Azeitonas sem caroço"] },
+  { name: "5 Queijos", ingredients: ["Catupiry", "Gorgonzola", "Provolone", "Mozzarella especial", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Bambino", ingredients: ["Batata Ruffles", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Brandi", ingredients: ["Mozzarella especial", "Presunto Royale trançado", "Catupiry", "Cebola roxa", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Calabresa", ingredients: ["Calabresa", "Cebolas frescas", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Calábria", ingredients: ["Catupiry", "Calabresa", "Cebolas frescas", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Calzone", ingredients: ["Mozzarella especial", "Bacon", "Champignon"] },
+  { name: "Escarola", ingredients: ["Escarola refogada", "Filés de aliche", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Florença", ingredients: ["Mozzarella especial", "Tomatinhos sweet grape", "Manjericão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Grega", ingredients: ["Mozzarella especial", "Berinjela temperada", "Tomate", "Cebola roxa", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Japonesa", ingredients: ["Shimeji na manteiga", "Shoyu", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Margherita", ingredients: ["Mozzarella especial", "Tomate", "Manjericão fresco", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Milano", ingredients: ["Frango grelhado", "Catupiry", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Milho Verde", ingredients: ["Milho verde", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Mozzarella", ingredients: ["Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Napolitana", ingredients: ["Mozzarella especial", "Tomate", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Palermo", ingredients: ["Pepperoni gourmet", "Pimentão verde", "Pimentão vermelho", "Pimentão amarelo", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Palmito", ingredients: ["Palmito", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Paris", ingredients: ["Queijo Brie", "Geleia de pimenta", "Damasco"] },
+  { name: "Pisa", ingredients: ["Mozzarella de búfala", "Alcachofra", "Presunto Parma", "Manjericão fresco", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Portuguesa", ingredients: ["Presunto cozido", "Ervilhas", "Ovos picados", "Cebolas frescas", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Quattro Stagioni", ingredients: ["Mozzarella especial", "Lombo canadense", "Pêssego", "Abacaxi", "Figo em calda"] },
+  { name: "Ravena", ingredients: ["Lombinho fatiado", "Catupiry", "Tomate", "Alcaparra", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Romana", ingredients: ["Mozzarella especial", "Tomate", "Filés de aliche", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Toscana", ingredients: ["Calabresa", "Alho frito", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Veneza", ingredients: ["Mozzarella de búfala", "Tomate seco", "Rúcula fresca", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Via Appia", ingredients: ["Mozzarella especial", "Calabresa", "Palmito", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Zucchini", ingredients: ["Mozzarella especial", "Abobrinha grelhada", "Azeite", "Queijo Polenguinho", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+];
+
+export const sweetFlavors: Flavor[] = [
+  { name: "Bela", ingredients: ["Banana", "Açúcar", "Flambada com conhaque", "Canela"] },
+  { name: "Passione", ingredients: ["Chocolate ao leite", "Chocolate branco"] },
+  { name: "Pralina", ingredients: ["Leite condensado", "Paçoca Amor", "Amendoim"] },
+  { name: "Sensazione", ingredients: ["Massa crocante", "Chocolate ao leite", "Chocolate branco", "Geleia de morango"] },
+  { name: "Siena", ingredients: ["Banana", "Chocolate ao leite"] },
+  { name: "Verona", ingredients: ["Mozzarella especial", "Goiabada cremosa"] },
+];
+
+export const sizes = [
+  { name: "Média", detail: "4 pedaços" },
+  { name: "Família", detail: "8 pedaços" },
+];
