@@ -199,8 +199,12 @@
   transform: translateY(-0.25rem);
 }
 
-#lovable-badge,
-button[aria-label*="Lovable"],
-div[class*="lovable"] {
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#lovable-badge {
   display: none !important;
 }
