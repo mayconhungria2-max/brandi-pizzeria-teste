@@ -107,10 +107,10 @@ function Index() {
       {/* HERO */}
       <section
         id="inicio"
-        className="relative min-h-[520px] overflow-hidden md:min-h-[640px] lg:min-h-[720px]"
+        className="relative min-h-[520px] overflow-hidden md:min-h-[600px] lg:min-h-[720px]"
       >
-        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 md:grid-cols-2">
-          <div className="relative z-10 px-4 py-14 md:py-20 lg:pl-8 lg:pr-14 lg:py-24">
+        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 lg:grid-cols-2">
+          <div className="relative z-10 px-4 py-14 md:py-16 lg:pl-8 lg:pr-14 lg:py-24">
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
             </span>
