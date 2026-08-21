@@ -107,27 +107,27 @@ function Index() {
       {/* HERO */}
       <section
         id="inicio"
-        className="relative min-h-[520px] overflow-hidden md:min-h-[600px] lg:min-h-[720px]"
+        className="relative min-h-[340px] overflow-hidden sm:min-h-[420px] md:min-h-[560px] lg:min-h-[720px]"
       >
-        <div className="relative mx-auto grid h-full max-w-[1400px] items-center gap-0 lg:grid-cols-2">
-          <div className="relative z-10 px-4 py-14 md:py-16 lg:pl-8 lg:pr-14 lg:py-24">
-            <span className="eyebrow text-forest-light">
+        <div className="relative mx-auto grid h-full max-w-[1400px] grid-cols-2 items-center gap-0">
+          <div className="relative z-10 px-4 py-8 sm:py-12 md:py-16 lg:py-24 lg:pl-8 lg:pr-14">
+            <span className="eyebrow text-[0.55rem] text-forest-light sm:text-xs">
               Pizzeria artesanal
             </span>
-            <h1 className="mt-4 font-serif text-4xl leading-[1.1] text-forest-deep sm:text-5xl md:text-[2.6rem] lg:text-[3.7rem]">
+            <h1 className="mt-3 font-serif text-[1.35rem] leading-[1.1] text-forest-deep sm:text-3xl md:text-[2.4rem] lg:text-[3.7rem]">
               Uma pizza feita para
               <br />
               <em className="italic">ser lembrada.</em>
             </h1>
-            <div className="rule-italy mt-6" />
-            <p className="mt-6 max-w-md text-[0.95rem] leading-relaxed text-muted-foreground">
+            <div className="rule-italy mt-4 lg:mt-6" />
+            <p className="mt-4 max-w-md text-[0.72rem] leading-relaxed text-muted-foreground sm:text-sm lg:mt-6 lg:text-[0.95rem]">
               Sabores especiais, ingredientes selecionados e o cuidado de uma
               pizzaria que transforma cada pizza em uma experiência.
             </p>
-            <div className="mt-9 flex flex-wrap gap-4">
+            <div className="mt-5 flex flex-wrap gap-2 sm:gap-4 lg:mt-9">
               <a
                 href="#cardapio"
-                className="inline-flex items-center gap-2 bg-brand-red px-7 py-4 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase transition-colors hover:bg-brand-red-dark"
+                className="inline-flex items-center gap-2 bg-brand-red px-4 py-3 text-[0.6rem] font-medium tracking-[0.16em] text-primary-foreground uppercase transition-colors hover:bg-brand-red-dark sm:px-7 sm:py-4 sm:text-[0.7rem] sm:tracking-[0.2em]"
               >
                 Ver cardápio <ChevronRight className="h-4 w-4" />
               </a>
@@ -135,7 +135,7 @@ function Index() {
                 href={whatsappLink()}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 border border-forest px-7 py-4 text-[0.7rem] font-medium tracking-[0.2em] text-forest uppercase transition-colors hover:bg-forest hover:text-cream"
+                className="inline-flex items-center gap-2 border border-forest px-4 py-3 text-[0.6rem] font-medium tracking-[0.16em] text-forest uppercase transition-colors hover:bg-forest hover:text-cream sm:px-7 sm:py-4 sm:text-[0.7rem] sm:tracking-[0.2em]"
               >
                 Pedir online
               </a>
@@ -143,7 +143,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="relative h-[320px] w-full md:h-[420px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-[54%]">
+        <div className="absolute inset-y-0 right-0 w-1/2">
           <img
             src={heroPizzaWide}
             alt="Pizza margherita artesanal da Brandi Pizzerie"
@@ -154,18 +154,19 @@ function Index() {
           {/* fades suaves em todas as bordas para integrar a foto ao fundo */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cream to-transparent lg:w-40"
+            className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-cream to-transparent sm:w-20 lg:w-40"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-cream to-transparent md:h-28"
+            className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-cream to-transparent md:h-28"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-cream to-transparent md:h-28"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-cream to-transparent md:h-28"
           />
         </div>
       </section>
+
 
       {/* SOBRE */}
       <section id="sobre" className="border-t border-border">
