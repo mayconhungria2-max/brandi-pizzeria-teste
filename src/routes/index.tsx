@@ -184,8 +184,8 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={dough}
-              alt="Preparo da massa artesanal"
+              src={ovenPizza}
+              alt="Pizza artesanal saindo do forno a lenha"
               loading="lazy"
               width={1008}
               height={1200}
