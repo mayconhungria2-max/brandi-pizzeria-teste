@@ -114,7 +114,7 @@ function Index() {
             <span className="eyebrow text-forest-light">
               Pizzeria artesanal
             </span>
-            <h1 className="mt-4 font-serif text-4xl leading-[1.1] text-forest-deep sm:text-5xl lg:text-[3.7rem]">
+            <h1 className="mt-4 font-serif text-4xl leading-[1.1] text-forest-deep sm:text-5xl md:text-[2.6rem] lg:text-[3.7rem]">
               Uma pizza feita para
               <br />
               <em className="italic">ser lembrada.</em>
