@@ -361,6 +361,10 @@ function Index() {
         </div>
       </section>
 
+      <FlavorsSection />
+
+
+
       {/* BEBIDAS */}
       <section className="border-t border-border bg-card">
         <div className="mx-auto max-w-[1400px] px-4 py-20 lg:px-8 lg:py-24">
