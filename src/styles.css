@@ -199,11 +199,16 @@
   transform: translateY(-0.25rem);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 
 #lovable-badge {
   display: none !important;
