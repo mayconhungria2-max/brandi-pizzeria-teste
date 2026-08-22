@@ -15,6 +15,8 @@ import { Header } from "@/components/brandi/Header";
 import { Footer } from "@/components/brandi/Footer";
 import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
+import { FlavorsSection } from "@/components/brandi/FlavorsSection";
+
 import heroPizza from "@/assets/hero-pizza.jpg";
 import heroPizzaWide from "@/assets/hero-pizza-wide.jpg";
 import ovenPizza from "@/assets/oven-pizza.jpg";
