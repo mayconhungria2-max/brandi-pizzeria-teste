@@ -199,3 +199,10 @@ export const sizes = [
   { name: "Média", detail: "4 pedaços" },
   { name: "Família", detail: "8 pedaços" },
 ];
+
+export type SizeName = "Média" | "Família";
+
+export const flavorPrices: Record<"savory" | "sweet", Record<SizeName, number>> = {
+  savory: { "Média": 45, "Família": 65 },
+  sweet: { "Média": 37, "Família": 55 },
+};
