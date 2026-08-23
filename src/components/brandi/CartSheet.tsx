@@ -44,27 +44,6 @@ function Field({
   );
 }
 
-export function CartButton() {
-  const { count, setOpen } = useCart();
-  return (
-    <button
-      onClick={() => setOpen(true)}
-      aria-label="Abrir carrinho"
-      className="fixed right-4 bottom-24 z-50 flex items-center gap-2 rounded-full bg-brand-red px-5 py-4 text-primary-foreground shadow-xl shadow-brand-red/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-red-dark sm:right-5 sm:bottom-28"
-    >
-      <ShoppingBag className="h-5 w-5" />
-      <span className="text-[0.7rem] font-medium tracking-[0.18em] uppercase">
-        Carrinho
-      </span>
-      {count > 0 && (
-        <span className="grid h-6 min-w-6 place-items-center rounded-full bg-cream px-1.5 text-xs font-semibold text-brand-red">
-          {count}
-        </span>
-      )}
-    </button>
-  );
-}
-
 export function CartSheet() {
   const { items, subtotal, open, setOpen, increment, decrement, remove, clear } =
     useCart();
