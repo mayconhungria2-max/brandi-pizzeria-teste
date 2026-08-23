@@ -1,7 +1,27 @@
 import { useState } from "react";
-import { Menu, X, Pizza } from "lucide-react";
+import { Menu, X, Pizza, ShoppingBag } from "lucide-react";
 import logoAsset from "@/assets/brandi-logo-mark.png.asset.json";
 import { navLinks, whatsappLink } from "@/lib/brandi";
+import { useCart } from "@/lib/cart";
+
+function CartHeaderButton() {
+  const { count, setOpen } = useCart();
+  return (
+    <button
+      onClick={() => setOpen(true)}
+      aria-label="Abrir carrinho"
+      className="relative inline-flex items-center justify-center gap-2 rounded-full border border-forest/20 bg-cream px-4 py-3.5 text-[0.7rem] font-medium tracking-[0.16em] text-forest uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-forest hover:bg-forest hover:text-cream sm:px-5"
+    >
+      <ShoppingBag className="h-4 w-4" />
+      <span className="hidden sm:inline">Carrinho</span>
+      {count > 0 && (
+        <span className="absolute -top-2 -right-2 grid h-5 min-w-5 place-items-center rounded-full bg-brand-red px-1 text-[0.65rem] font-semibold text-primary-foreground shadow-md">
+          {count}
+        </span>
+      )}
+    </button>
+  );
+}
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -22,7 +42,7 @@ export function Header() {
           />
         </a>
 
-        <div className="flex items-center justify-end gap-4 lg:gap-8">
+        <div className="flex items-center justify-end gap-2 sm:gap-3 lg:gap-4">
           <nav className="hidden items-center gap-7 xl:flex">
             {navLinks.map((l) => (
               <a
@@ -39,10 +59,12 @@ export function Header() {
             href={whatsappLink()}
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-brand-red px-6 py-3.5 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-red-dark sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-brand-red px-4 py-3.5 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-red-dark sm:inline-flex lg:px-6"
           >
             <Pizza className="h-4 w-4" /> Pedir online
           </a>
+
+          <CartHeaderButton />
 
           <button
             aria-label="Abrir menu"
@@ -67,14 +89,17 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a
-              href={whatsappLink()}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-4 mb-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-red px-5 py-4 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase sm:hidden"
-            >
-              <Pizza className="h-4 w-4" /> Pedir online
-            </a>
+            <div className="mt-4 mb-4 flex flex-col gap-2 sm:hidden">
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-red px-5 py-4 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase"
+              >
+                <Pizza className="h-4 w-4" /> Pedir online
+              </a>
+              <CartHeaderButton />
+            </div>
           </nav>
         </div>
       )}
