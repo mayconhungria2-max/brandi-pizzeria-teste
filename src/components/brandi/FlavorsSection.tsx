@@ -95,14 +95,14 @@ export function FlavorsSection() {
         </h3>
         <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {savoryFlavors.map((f, i) => (
-            <FlavorCard key={f.name} flavor={f} index={i} />
+            <FlavorCard key={f.name} flavor={f} index={i} kind="savory" />
           ))}
         </div>
 
         <h3 className="eyebrow mt-16 text-forest-light">🍫 Pizzas doces</h3>
         <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {sweetFlavors.map((f, i) => (
-            <FlavorCard key={f.name} flavor={f} index={i} />
+            <FlavorCard key={f.name} flavor={f} index={i} kind="sweet" />
           ))}
         </div>
 
