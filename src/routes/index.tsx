@@ -5,7 +5,9 @@ import {
   Instagram,
   MapPin,
   Phone,
+  Plus,
   Quote,
+
   Star,
   Truck,
   UtensilsCrossed,
@@ -16,6 +18,9 @@ import { Footer } from "@/components/brandi/Footer";
 import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
 import { FlavorsSection } from "@/components/brandi/FlavorsSection";
+import { CartButton, CartSheet } from "@/components/brandi/CartSheet";
+import { CartProvider, parseBRL, useCart } from "@/lib/cart";
+
 
 import heroPizza from "@/assets/hero-pizza.jpg";
 import heroPizzaWide from "@/assets/hero-pizza-wide.jpg";
@@ -100,7 +105,17 @@ function MenuRow({
 }
 
 function Index() {
+  return (
+    <CartProvider>
+      <IndexContent />
+    </CartProvider>
+  );
+}
+
+function IndexContent() {
   const [selected, setSelected] = useState<Pizza | null>(null);
+  const { add } = useCart();
+
 
   return (
     <div className="min-h-screen border-l-0 bg-cream lg:border-l-[10px] lg:border-forest">
@@ -374,30 +389,63 @@ function Index() {
           <div className="mx-auto mt-12 grid max-w-5xl gap-x-16 gap-y-12 md:grid-cols-2">
             <div>
               <h3 className="eyebrow text-forest-light">Sem álcool</h3>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-2.5">
                 {drinks.map((d) => (
-                  <li key={d.name} className="flex items-baseline text-sm">
+                  <li key={d.name} className="flex items-center gap-3 text-sm">
                     <span className="text-forest">{d.name}</span>
                     <span className="dotted-lead" />
-                    <span className="font-serif text-forest">{d.price}</span>
+                    <span className="font-serif whitespace-nowrap text-forest">
+                      {d.price}
+                    </span>
+                    <button
+                      aria-label={`Adicionar ${d.name}`}
+                      onClick={() =>
+                        add({
+                          id: `bebida-${d.name}`,
+                          name: d.name,
+                          detail: "Bebida",
+                          unitPrice: parseBRL(d.price),
+                        })
+                      }
+                      className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-border text-forest transition-colors hover:border-brand-red hover:bg-brand-red hover:text-primary-foreground"
+                    >
+                      <Plus className="h-4 w-4" />
+                    </button>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
               <h3 className="eyebrow text-forest-light">Bebidas alcoólicas</h3>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-2.5">
                 {alcoholicDrinks.map((d) => (
-                  <li key={d.name} className="flex items-baseline text-sm">
+                  <li key={d.name} className="flex items-center gap-3 text-sm">
                     <span className="text-forest">{d.name}</span>
                     <span className="dotted-lead" />
                     <span className="font-serif whitespace-nowrap text-forest">
                       {d.price}
                     </span>
+                    {parseBRL(d.price) > 0 && (
+                      <button
+                        aria-label={`Adicionar ${d.name}`}
+                        onClick={() =>
+                          add({
+                            id: `bebida-${d.name}`,
+                            name: d.name,
+                            detail: "Bebida",
+                            unitPrice: parseBRL(d.price),
+                          })
+                        }
+                        className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-border text-forest transition-colors hover:border-brand-red hover:bg-brand-red hover:text-primary-foreground"
+                      >
+                        <Plus className="h-4 w-4" />
+                      </button>
+                    )}
                   </li>
                 ))}
               </ul>
             </div>
+
           </div>
         </div>
       </section>
@@ -516,7 +564,10 @@ function Index() {
 
       <Footer />
       <WhatsAppFab />
+      <CartButton />
+      <CartSheet />
       <PizzaDialog pizza={selected} onClose={() => setSelected(null)} />
+
     </div>
   );
 }

@@ -1,20 +1,30 @@
 import { motion } from "framer-motion";
-import { Pizza as PizzaIcon, Ruler } from "lucide-react";
+import { Pizza as PizzaIcon, Plus, Ruler } from "lucide-react";
 
 import {
-  pizzaLink,
+  flavorPrices,
   savoryFlavors,
   sizes,
   sweetFlavors,
   type Flavor,
+  type SizeName,
 } from "@/lib/brandi";
+import { formatBRL, useCart } from "@/lib/cart";
 
-function FlavorCard({ flavor, index }: { flavor: Flavor; index: number }) {
+function FlavorCard({
+  flavor,
+  index,
+  kind,
+}: {
+  flavor: Flavor;
+  index: number;
+  kind: "savory" | "sweet";
+}) {
+  const { add } = useCart();
+  const prices = flavorPrices[kind];
+
   return (
-    <motion.a
-      href={pizzaLink(flavor.name)}
-      target="_blank"
-      rel="noreferrer"
+    <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -41,9 +51,28 @@ function FlavorCard({ flavor, index }: { flavor: Flavor; index: number }) {
           </li>
         ))}
       </ul>
-    </motion.a>
+      <div className="mt-5 grid gap-2 border-t border-border/70 pt-4 sm:grid-cols-2">
+        {(Object.keys(prices) as SizeName[]).map((size) => (
+          <button
+            key={size}
+            onClick={() =>
+              add({
+                id: `${flavor.name}-${size}`,
+                name: `Pizza ${flavor.name}`,
+                detail: size,
+                unitPrice: prices[size],
+              })
+            }
+            className="inline-flex items-center justify-center gap-1.5 rounded-full border border-border bg-background px-3 py-2 text-[0.68rem] font-medium tracking-[0.1em] text-forest uppercase transition-colors hover:border-brand-red hover:bg-brand-red hover:text-primary-foreground"
+          >
+            <Plus className="h-3.5 w-3.5" /> {size} {formatBRL(prices[size])}
+          </button>
+        ))}
+      </div>
+    </motion.div>
   );
 }
+
 
 export function FlavorsSection() {
   return (
@@ -66,14 +95,14 @@ export function FlavorsSection() {
         </h3>
         <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {savoryFlavors.map((f, i) => (
-            <FlavorCard key={f.name} flavor={f} index={i} />
+            <FlavorCard key={f.name} flavor={f} index={i} kind="savory" />
           ))}
         </div>
 
         <h3 className="eyebrow mt-16 text-forest-light">🍫 Pizzas doces</h3>
         <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {sweetFlavors.map((f, i) => (
-            <FlavorCard key={f.name} flavor={f} index={i} />
+            <FlavorCard key={f.name} flavor={f} index={i} kind="sweet" />
           ))}
         </div>
 
