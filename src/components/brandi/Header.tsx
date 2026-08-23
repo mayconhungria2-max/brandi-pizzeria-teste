@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Menu, X, Pizza } from "lucide-react";
+import { Menu, X, Pizza, ShoppingBag } from "lucide-react";
 import logoAsset from "@/assets/brandi-logo-mark.png.asset.json";
 import { navLinks, whatsappLink } from "@/lib/brandi";
+import { useCart } from "@/lib/cart";
 
 export function Header() {
   const [open, setOpen] = useState(false);
