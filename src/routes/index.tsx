@@ -105,11 +105,7 @@ function MenuRow({
 }
 
 function Index() {
-  return (
-    <CartProvider>
-      <IndexContent />
-    </CartProvider>
-  );
+  return <IndexContent />;
 }
 
 function IndexContent() {
