@@ -100,7 +100,17 @@ function MenuRow({
 }
 
 function Index() {
+  return (
+    <CartProvider>
+      <IndexContent />
+    </CartProvider>
+  );
+}
+
+function IndexContent() {
   const [selected, setSelected] = useState<Pizza | null>(null);
+  const { add } = useCart();
+
 
   return (
     <div className="min-h-screen border-l-0 bg-cream lg:border-l-[10px] lg:border-forest">
