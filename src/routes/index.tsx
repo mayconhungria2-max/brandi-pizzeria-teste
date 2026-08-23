@@ -18,8 +18,8 @@ import { Footer } from "@/components/brandi/Footer";
 import { WhatsAppFab } from "@/components/brandi/WhatsAppFab";
 import { PizzaDialog } from "@/components/brandi/PizzaDialog";
 import { FlavorsSection } from "@/components/brandi/FlavorsSection";
-import { CartButton, CartSheet } from "@/components/brandi/CartSheet";
-import { CartProvider, parseBRL, useCart } from "@/lib/cart";
+import { CartSheet } from "@/components/brandi/CartSheet";
+import { parseBRL, useCart } from "@/lib/cart";
 
 
 import heroPizza from "@/assets/hero-pizza.jpg";
