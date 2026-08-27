@@ -3,9 +3,10 @@ import { Pizza as PizzaIcon, Plus, Ruler } from "lucide-react";
 
 import {
   flavorPrices,
-  savoryFlavors,
+  gourmetFlavors,
   sizes,
   sweetFlavors,
+  traditionalFlavors,
   type Flavor,
   type SizeName,
 } from "@/lib/brandi";
