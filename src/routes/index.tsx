@@ -560,7 +560,7 @@ function IndexContent() {
 
       <Footer />
       <WhatsAppFab />
-      <CartButton />
+      
       <CartSheet />
       <PizzaDialog pizza={selected} onClose={() => setSelected(null)} />
 
