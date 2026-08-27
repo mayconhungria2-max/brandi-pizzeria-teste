@@ -515,19 +515,6 @@ function IndexContent() {
                 </a>
               </div>
               <div>
-                <h3 className="eyebrow text-forest-light">Telefones</h3>
-                <ul className="mt-2 space-y-1">
-                  {PHONES.map((p) => (
-                    <li
-                      key={p}
-                      className="flex items-center gap-2 font-serif text-lg text-forest"
-                    >
-                      <Phone className="h-4 w-4 text-brand-red" /> {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
                 <h3 className="eyebrow text-forest-light">Instagram</h3>
                 <a
                   href="https://instagram.com/brandipizzerie"

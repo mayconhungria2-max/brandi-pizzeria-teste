@@ -6,7 +6,7 @@ import heroPizza from "@/assets/hero-pizza.jpg";
 
 export const WHATSAPP_NUMBER = "5511942133516";
 export const WHATSAPP_DISPLAY = "(11) 94213-3516";
-export const PHONES = ["(11) 5533-0123", "(11) 5533-7077"];
+
 export const INSTAGRAM = "@brandipizzerie";
 
 export function whatsappLink(message?: string) {
