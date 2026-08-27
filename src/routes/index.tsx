@@ -4,7 +4,7 @@ import {
   ChevronRight,
   Instagram,
   MapPin,
-  Phone,
+  
   Plus,
   Quote,
 
