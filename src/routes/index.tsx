@@ -30,7 +30,7 @@ import {
   drinks,
   featured,
   INSTAGRAM,
-  PHONES,
+  
   pizzas,
   sweetPizzas,
   whatsappLink,
