@@ -4,12 +4,15 @@ import pizzaVeneza from "@/assets/pizza-veneza.jpg";
 import pizzaPisa from "@/assets/pizza-pisa.jpg";
 
 import fotoAtum from "@/assets/Atum.webp.asset.json";
+import fotoBambino from "@/assets/Bambino.webp.asset.json";
 import fotoBrandi from "@/assets/brandi.webp.asset.json";
 import fotoCalabresa from "@/assets/calabresa.webp.asset.json";
 import fotoCincoQueijos from "@/assets/5_queijos.webp.asset.json";
 import fotoFlorenca from "@/assets/Florença.webp.asset.json";
+import fotoGrega from "@/assets/Grega.webp.asset.json";
 import fotoJaponesa from "@/assets/Japonesa.webp.asset.json";
 import fotoMargherita from "@/assets/margherita.webp.asset.json";
+import fotoParis from "@/assets/Paris.webp.asset.json";
 import fotoPompeia from "@/assets/Pompéia.webp.asset.json";
 import fotoToscana from "@/assets/Toscana.webp.asset.json";
 
@@ -23,12 +26,15 @@ export function normalizeName(name: string) {
 
 export const flavorPhotos: Record<string, string> = {
   atum: fotoAtum.url,
+  bambino: fotoBambino.url,
   brandi: fotoBrandi.url,
   calabresa: fotoCalabresa.url,
   "5 queijos": fotoCincoQueijos.url,
   florenca: fotoFlorenca.url,
+  grega: fotoGrega.url,
   japonesa: fotoJaponesa.url,
   margherita: fotoMargherita.url,
+  paris: fotoParis.url,
   pompeia: fotoPompeia.url,
   toscana: fotoToscana.url,
 };
