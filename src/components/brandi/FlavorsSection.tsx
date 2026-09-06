@@ -35,14 +35,20 @@ function FlavorCard({
       whileHover={{ y: -6 }}
       className="group flex flex-col overflow-hidden rounded-2xl border border-border/70 bg-card/70 shadow-sm ring-1 ring-white/40 backdrop-blur-md transition-shadow hover:border-brand-red/40 hover:shadow-xl"
     >
-      {photo && (
-        <img
-          src={photo}
-          alt={`Pizza ${flavor.name}`}
-          loading="lazy"
-          className="h-48 w-full object-cover"
-        />
-      )}
+      <div className="aspect-[4/3] w-full overflow-hidden bg-forest/5">
+        {photo ? (
+          <img
+            src={photo}
+            alt={`Pizza ${flavor.name}`}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className="grid h-full w-full place-items-center">
+            <PizzaIcon className="h-10 w-10 text-forest/25" />
+          </div>
+        )}
+      </div>
       <div className="flex flex-1 flex-col p-6">
       <div className="flex items-center gap-3">
         <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-forest/10 text-forest transition-colors group-hover:bg-brand-red/10 group-hover:text-brand-red">
