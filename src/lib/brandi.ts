@@ -2,7 +2,41 @@ import pizzaBrandi from "@/assets/pizza-brandi.jpg";
 import pizzaPalermo from "@/assets/pizza-palermo.jpg";
 import pizzaVeneza from "@/assets/pizza-veneza.jpg";
 import pizzaPisa from "@/assets/pizza-pisa.jpg";
-import heroPizza from "@/assets/hero-pizza.jpg";
+
+import fotoAtum from "@/assets/Atum.webp.asset.json";
+import fotoBrandi from "@/assets/brandi.webp.asset.json";
+import fotoCalabresa from "@/assets/calabresa.webp.asset.json";
+import fotoCincoQueijos from "@/assets/5_queijos.webp.asset.json";
+import fotoFlorenca from "@/assets/Florença.webp.asset.json";
+import fotoJaponesa from "@/assets/Japonesa.webp.asset.json";
+import fotoMargherita from "@/assets/margherita.webp.asset.json";
+import fotoPompeia from "@/assets/Pompéia.webp.asset.json";
+import fotoToscana from "@/assets/Toscana.webp.asset.json";
+
+export function normalizeName(name: string) {
+  return name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+export const flavorPhotos: Record<string, string> = {
+  atum: fotoAtum.url,
+  brandi: fotoBrandi.url,
+  calabresa: fotoCalabresa.url,
+  "5 queijos": fotoCincoQueijos.url,
+  florenca: fotoFlorenca.url,
+  japonesa: fotoJaponesa.url,
+  margherita: fotoMargherita.url,
+  pompeia: fotoPompeia.url,
+  toscana: fotoToscana.url,
+};
+
+export function flavorPhoto(name: string): string | undefined {
+  return flavorPhotos[normalizeName(name)];
+}
+
 
 export const WHATSAPP_NUMBER = "5511942133516";
 export const WHATSAPP_DISPLAY = "(11) 94213-3516";
@@ -37,7 +71,7 @@ export const pizzas: Pizza[] = [
     short: "Presunto Royale trançado, Catupiry® e cebola roxa",
     description:
       "Mozzarella speciale, finas fatias de presunto Royale trançado, recheado com Catupiry® e coberto com rodelas de cebola roxa, salpicada com orégano e azeitonas sem caroço.",
-    image: pizzaBrandi,
+    image: fotoBrandi.url,
   },
   {
     name: "GREGA",
@@ -53,7 +87,7 @@ export const pizzas: Pizza[] = [
     short: "Tomate em rodelas e manjericão fresco",
     description:
       "Mozzarella speciale, rodelas de tomate salpicada com manjericão fresco, orégano e azeitonas sem caroço.",
-    image: heroPizza,
+    image: fotoMargherita.url,
   },
   {
     name: "PALERMO",
