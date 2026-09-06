@@ -214,6 +214,7 @@ export const gourmetFlavors: Flavor[] = [
   { name: "Japonesa", ingredients: ["Shimeji na manteiga", "Shoyu", "Mozzarella especial", "Orégano", "Azeitonas sem caroço"] },
   { name: "Milano", ingredients: ["Frango grelhado", "Catupiry", "Orégano", "Azeitonas sem caroço"] },
   { name: "Palermo", ingredients: ["Pepperoni gourmet", "Pimentão verde", "Pimentão vermelho", "Pimentão amarelo", "Parmesão", "Orégano", "Azeitonas sem caroço"] },
+  { name: "Pompéia", ingredients: ["Mozzarella especial", "Presunto parma", "Rúcula", "Tomate seco", "Orégano", "Azeitonas sem caroço"] },
   { name: "Paris", ingredients: ["Queijo Brie", "Geleia de pimenta", "Damasco"] },
   { name: "Pisa", ingredients: ["Mozzarella de búfala", "Alcachofra", "Presunto Parma", "Manjericão fresco", "Orégano", "Azeitonas sem caroço"] },
   { name: "Quattro Stagioni", ingredients: ["Mozzarella especial", "Lombo canadense", "Pêssego", "Abacaxi", "Figo em calda"] },
