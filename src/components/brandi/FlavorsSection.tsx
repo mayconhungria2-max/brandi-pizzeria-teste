@@ -82,7 +82,9 @@ function FlavorCard({
           </button>
         ))}
       </div>
+      </div>
     </motion.div>
+
   );
 }
 
