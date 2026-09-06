@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Pizza as PizzaIcon, Plus, Ruler } from "lucide-react";
 
 import {
+  flavorPhoto,
   flavorPrices,
   gourmetFlavors,
   sizes,
@@ -23,6 +24,7 @@ function FlavorCard({
 }) {
   const { add } = useCart();
   const prices = flavorPrices[kind];
+  const photo = flavorPhoto(flavor.name);
 
   return (
     <motion.div
@@ -31,8 +33,17 @@ function FlavorCard({
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45, delay: Math.min(index, 8) * 0.05 }}
       whileHover={{ y: -6 }}
-      className="group flex flex-col rounded-2xl border border-border/70 bg-card/70 p-6 shadow-sm ring-1 ring-white/40 backdrop-blur-md transition-shadow hover:border-brand-red/40 hover:shadow-xl"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-border/70 bg-card/70 shadow-sm ring-1 ring-white/40 backdrop-blur-md transition-shadow hover:border-brand-red/40 hover:shadow-xl"
     >
+      {photo && (
+        <img
+          src={photo}
+          alt={`Pizza ${flavor.name}`}
+          loading="lazy"
+          className="h-48 w-full object-cover"
+        />
+      )}
+      <div className="flex flex-1 flex-col p-6">
       <div className="flex items-center gap-3">
         <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-forest/10 text-forest transition-colors group-hover:bg-brand-red/10 group-hover:text-brand-red">
           <PizzaIcon className="h-4 w-4" />
@@ -41,6 +52,7 @@ function FlavorCard({
           {flavor.name}
         </h3>
       </div>
+
       <ul className="mt-4 space-y-1.5">
         {flavor.ingredients.map((i) => (
           <li
