@@ -72,7 +72,7 @@ export const pizzas: Pizza[] = [
     short: "Presunto Royale trançado, Catupiry® e cebola roxa",
     description:
       "Mozzarella speciale, finas fatias de presunto Royale trançado, recheado com Catupiry® e coberto com rodelas de cebola roxa, salpicada com orégano e azeitonas sem caroço.",
-    image: pizzaBrandi,
+    image: fotoBrandi.url,
   },
   {
     name: "GREGA",
@@ -88,7 +88,7 @@ export const pizzas: Pizza[] = [
     short: "Tomate em rodelas e manjericão fresco",
     description:
       "Mozzarella speciale, rodelas de tomate salpicada com manjericão fresco, orégano e azeitonas sem caroço.",
-    image: heroPizza,
+    image: fotoMargherita.url,
   },
   {
     name: "PALERMO",
