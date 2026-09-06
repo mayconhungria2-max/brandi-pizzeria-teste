@@ -2,7 +2,6 @@ import pizzaBrandi from "@/assets/pizza-brandi.jpg";
 import pizzaPalermo from "@/assets/pizza-palermo.jpg";
 import pizzaVeneza from "@/assets/pizza-veneza.jpg";
 import pizzaPisa from "@/assets/pizza-pisa.jpg";
-import heroPizza from "@/assets/hero-pizza.jpg";
 
 import fotoAtum from "@/assets/Atum.webp.asset.json";
 import fotoBrandi from "@/assets/brandi.webp.asset.json";
