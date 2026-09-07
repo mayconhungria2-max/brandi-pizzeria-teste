@@ -15,6 +15,16 @@ import fotoMargherita from "@/assets/margherita.webp.asset.json";
 import fotoParis from "@/assets/paris-pizza.webp.asset.json";
 import fotoPompeia from "@/assets/Pompéia.webp.asset.json";
 import fotoToscana from "@/assets/Toscana.webp.asset.json";
+import fotoPisa from "@/assets/pisa.webp.asset.json";
+import fotoMilano from "@/assets/milano.webp.asset.json";
+import fotoPortuguesa from "@/assets/portuguesa.webp.asset.json";
+import fotoQuattroStagioni from "@/assets/5_stagioni.webp.asset.json";
+import fotoRavena from "@/assets/ravena.webp.asset.json";
+import fotoRomana from "@/assets/romana.webp.asset.json";
+import fotoEscarola from "@/assets/escarola.webp.asset.json";
+import fotoMilhoVerde from "@/assets/milho_verde.webp.asset.json";
+import fotoVeneza from "@/assets/veneza.webp.asset.json";
+import fotoPalmito from "@/assets/palmito.webp.asset.json";
 
 export function normalizeName(name: string) {
   return name
@@ -37,6 +47,16 @@ export const flavorPhotos: Record<string, string> = {
   paris: fotoParis.url,
   pompeia: fotoPompeia.url,
   toscana: fotoToscana.url,
+  pisa: fotoPisa.url,
+  milano: fotoMilano.url,
+  portuguesa: fotoPortuguesa.url,
+  "quattro stagioni": fotoQuattroStagioni.url,
+  ravena: fotoRavena.url,
+  romana: fotoRomana.url,
+  escarola: fotoEscarola.url,
+  "milho verde": fotoMilhoVerde.url,
+  veneza: fotoVeneza.url,
+  palmito: fotoPalmito.url,
 };
 
 export function flavorPhoto(name: string): string | undefined {
