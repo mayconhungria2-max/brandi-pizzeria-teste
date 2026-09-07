@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "4a245ac4-1f68-4334-aadd-ac13ee3bf6cf",
+  "asset_id": "fa25c961-12fe-4cb0-bf34-bfb793fa929c",
   "project_id": "da19bfb7-a33e-4a84-954f-c723a31a043b",
-  "url": "/__l5e/assets-v1/4a245ac4-1f68-4334-aadd-ac13ee3bf6cf/Paris.webp",
-  "r2_key": "a/v1/da19bfb7-a33e-4a84-954f-c723a31a043b/4a245ac4-1f68-4334-aadd-ac13ee3bf6cf/Paris.webp",
+  "url": "/__l5e/assets-v1/fa25c961-12fe-4cb0-bf34-bfb793fa929c/Paris.webp",
+  "r2_key": "a/v1/da19bfb7-a33e-4a84-954f-c723a31a043b/fa25c961-12fe-4cb0-bf34-bfb793fa929c/Paris.webp",
   "original_filename": "Paris.webp",
-  "size": 2399429,
-  "content_type": "image/png",
-  "created_at": "2026-09-06T21:30:49Z"
+  "size": 197632,
+  "content_type": "image/webp",
+  "created_at": "2026-09-07T21:23:30Z"
 }
