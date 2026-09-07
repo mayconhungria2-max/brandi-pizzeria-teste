@@ -129,7 +129,7 @@ export const pizzas: Pizza[] = [
     short: "Queijo Brie, geleia de pimenta e damasco",
     description:
       "Queijo Brie, geleia de pimenta e pedacinhos de damasco.",
-    image: pizzaPisa,
+    image: fotoParis.url,
   },
   {
     name: "PISA",
@@ -137,7 +137,7 @@ export const pizzas: Pizza[] = [
     short: "Búfala, alcachofra e presunto parma",
     description:
       "Mozzarella de búfala, pedaços de alcachofra, finas fatias de presunto parma, salpicada de manjericão fresco, orégano e azeitonas sem caroço.",
-    image: pizzaPisa,
+    image: fotoPisa.url,
   },
   {
     name: "VENEZA",
@@ -145,7 +145,7 @@ export const pizzas: Pizza[] = [
     short: "Búfala, tomate seco e rúcula fresca",
     description:
       "Mozzarella de búfala, tomates secos, coberta com rúcula fresca, salpicada com orégano e azeitonas sem caroço.",
-    image: pizzaVeneza,
+    image: fotoVeneza.url,
   },
   {
     name: "VIA ÁPPIA",
