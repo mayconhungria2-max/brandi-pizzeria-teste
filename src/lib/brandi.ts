@@ -12,7 +12,7 @@ import fotoFlorenca from "@/assets/Florença.webp.asset.json";
 import fotoGrega from "@/assets/Grega.webp.asset.json";
 import fotoJaponesa from "@/assets/Japonesa.webp.asset.json";
 import fotoMargherita from "@/assets/margherita.webp.asset.json";
-import fotoParis from "@/assets/Paris.webp.asset.json";
+import fotoParis from "@/assets/paris-pizza.webp.asset.json";
 import fotoPompeia from "@/assets/Pompéia.webp.asset.json";
 import fotoToscana from "@/assets/Toscana.webp.asset.json";
 
