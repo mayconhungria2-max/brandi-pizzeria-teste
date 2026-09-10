@@ -25,6 +25,14 @@ import fotoEscarola from "@/assets/escarola.webp.asset.json";
 import fotoMilhoVerde from "@/assets/milho_verde.webp.asset.json";
 import fotoVeneza from "@/assets/veneza.webp.asset.json";
 import fotoPalmito from "@/assets/palmito.webp.asset.json";
+import fotoZucchini from "@/assets/Zucchini.webp.asset.json";
+import fotoMussarela from "@/assets/Mussarela.webp.asset.json";
+import fotoNapolitana from "@/assets/Napolitana.webp.asset.json";
+import fotoPassione from "@/assets/Passione.webp.asset.json";
+import fotoPralina from "@/assets/Pralina.webp.asset.json";
+import fotoVerona from "@/assets/Verona.webp.asset.json";
+import fotoCalabria from "@/assets/Calábria.webp.asset.json";
+import fotoViaAppia from "@/assets/Via_appia.webp.asset.json";
 
 export function normalizeName(name: string) {
   return name
