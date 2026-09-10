@@ -7,6 +7,7 @@ import fotoAtum from "@/assets/Atum.webp.asset.json";
 import fotoBambino from "@/assets/Bambino.webp.asset.json";
 import fotoBrandi from "@/assets/brandi.webp.asset.json";
 import fotoCalabresa from "@/assets/calabresa.webp.asset.json";
+import fotoCalzone from "@/assets/calzone.webp.asset.json";
 import fotoCincoQueijos from "@/assets/5_queijos.webp.asset.json";
 import fotoFlorenca from "@/assets/Florença.webp.asset.json";
 import fotoGrega from "@/assets/Grega.webp.asset.json";
@@ -25,6 +26,7 @@ import fotoEscarola from "@/assets/escarola.webp.asset.json";
 import fotoMilhoVerde from "@/assets/milho_verde.webp.asset.json";
 import fotoVeneza from "@/assets/veneza.webp.asset.json";
 import fotoPalmito from "@/assets/palmito.webp.asset.json";
+import fotoSensazione from "@/assets/sensazione.webp.asset.json";
 import fotoZucchini from "@/assets/Zucchini.webp.asset.json";
 import fotoMussarela from "@/assets/Mussarela.webp.asset.json";
 import fotoNapolitana from "@/assets/Napolitana.webp.asset.json";
@@ -47,6 +49,7 @@ export const flavorPhotos: Record<string, string> = {
   bambino: fotoBambino.url,
   brandi: fotoBrandi.url,
   calabresa: fotoCalabresa.url,
+  calzone: fotoCalzone.url,
   "5 queijos": fotoCincoQueijos.url,
   florenca: fotoFlorenca.url,
   grega: fotoGrega.url,
@@ -65,6 +68,7 @@ export const flavorPhotos: Record<string, string> = {
   "milho verde": fotoMilhoVerde.url,
   veneza: fotoVeneza.url,
   palmito: fotoPalmito.url,
+  sensazione: fotoSensazione.url,
   zucchini: fotoZucchini.url,
   mozzarella: fotoMussarela.url,
   napolitana: fotoNapolitana.url,
