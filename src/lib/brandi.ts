@@ -25,6 +25,14 @@ import fotoEscarola from "@/assets/escarola.webp.asset.json";
 import fotoMilhoVerde from "@/assets/milho_verde.webp.asset.json";
 import fotoVeneza from "@/assets/veneza.webp.asset.json";
 import fotoPalmito from "@/assets/palmito.webp.asset.json";
+import fotoZucchini from "@/assets/Zucchini.webp.asset.json";
+import fotoMussarela from "@/assets/Mussarela.webp.asset.json";
+import fotoNapolitana from "@/assets/Napolitana.webp.asset.json";
+import fotoPassione from "@/assets/Passione.webp.asset.json";
+import fotoPralina from "@/assets/Pralina.webp.asset.json";
+import fotoVerona from "@/assets/Verona.webp.asset.json";
+import fotoCalabria from "@/assets/Calábria.webp.asset.json";
+import fotoViaAppia from "@/assets/Via_appia.webp.asset.json";
 
 export function normalizeName(name: string) {
   return name
@@ -57,6 +65,14 @@ export const flavorPhotos: Record<string, string> = {
   "milho verde": fotoMilhoVerde.url,
   veneza: fotoVeneza.url,
   palmito: fotoPalmito.url,
+  zucchini: fotoZucchini.url,
+  mozzarella: fotoMussarela.url,
+  napolitana: fotoNapolitana.url,
+  passione: fotoPassione.url,
+  pralina: fotoPralina.url,
+  verona: fotoVerona.url,
+  calabria: fotoCalabria.url,
+  "via appia": fotoViaAppia.url,
 };
 
 export function flavorPhoto(name: string): string | undefined {
