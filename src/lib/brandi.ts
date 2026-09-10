@@ -35,6 +35,8 @@ import fotoPralina from "@/assets/Pralina.webp.asset.json";
 import fotoVerona from "@/assets/Verona.webp.asset.json";
 import fotoCalabria from "@/assets/Calábria.webp.asset.json";
 import fotoViaAppia from "@/assets/Via_appia.webp.asset.json";
+import fotoSiena from "@/assets/Siena.webp.asset.json";
+import fotoPalermo from "@/assets/Palermo.webp.asset.json";
 
 export function normalizeName(name: string) {
   return name
