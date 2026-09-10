@@ -65,6 +65,14 @@ export const flavorPhotos: Record<string, string> = {
   "milho verde": fotoMilhoVerde.url,
   veneza: fotoVeneza.url,
   palmito: fotoPalmito.url,
+  zucchini: fotoZucchini.url,
+  mozzarella: fotoMussarela.url,
+  napolitana: fotoNapolitana.url,
+  passione: fotoPassione.url,
+  pralina: fotoPralina.url,
+  verona: fotoVerona.url,
+  calabria: fotoCalabria.url,
+  "via appia": fotoViaAppia.url,
 };
 
 export function flavorPhoto(name: string): string | undefined {
