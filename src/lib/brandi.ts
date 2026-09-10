@@ -79,6 +79,8 @@ export const flavorPhotos: Record<string, string> = {
   verona: fotoVerona.url,
   calabria: fotoCalabria.url,
   "via appia": fotoViaAppia.url,
+  siena: fotoSiena.url,
+  palermo: fotoPalermo.url,
 };
 
 export function flavorPhoto(name: string): string | undefined {
