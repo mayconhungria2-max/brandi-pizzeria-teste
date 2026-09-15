@@ -1,7 +1,4 @@
-import pizzaBrandi from "@/assets/pizza-brandi.jpg";
 import pizzaPalermo from "@/assets/pizza-palermo.jpg";
-import pizzaVeneza from "@/assets/pizza-veneza.jpg";
-import pizzaPisa from "@/assets/pizza-pisa.jpg";
 
 import fotoAtum from "@/assets/Atum.webp.asset.json";
 import fotoBambino from "@/assets/Bambino.webp.asset.json";
@@ -37,6 +34,7 @@ import fotoCalabria from "@/assets/Calábria.webp.asset.json";
 import fotoViaAppia from "@/assets/Via_appia.webp.asset.json";
 import fotoSiena from "@/assets/Siena.webp.asset.json";
 import fotoPalermo from "@/assets/Palermo.webp.asset.json";
+import fotoBela from "@/assets/Bela.webp.asset.json";
 
 export function normalizeName(name: string) {
   return name
@@ -81,6 +79,7 @@ export const flavorPhotos: Record<string, string> = {
   "via appia": fotoViaAppia.url,
   siena: fotoSiena.url,
   palermo: fotoPalermo.url,
+  bela: fotoBela.url,
 };
 
 export function flavorPhoto(name: string): string | undefined {
@@ -129,7 +128,7 @@ export const pizzas: Pizza[] = [
     short: "Beringela temperada, tomate e cebola roxa",
     description:
       "Mozzarella speciale, beringela temperada, coberta com pedaços de tomate, rodelas de cebola roxa, salpicada com queijo parmesão, orégano e azeitonas sem caroço.",
-    image: pizzaVeneza,
+    image: fotoGrega.url,
   },
   {
     name: "MARGHERITA",
@@ -177,7 +176,7 @@ export const pizzas: Pizza[] = [
     short: "Calabresa em fatias finas e palmito",
     description:
       "Mozzarella speciale, coberta com finas fatias de calabresa, pedaços de palmito, salpicada com parmesão, orégano e azeitonas sem caroço.",
-    image: pizzaBrandi,
+    image: fotoViaAppia.url,
   },
   {
     name: "ZUCCHINI",
@@ -185,7 +184,7 @@ export const pizzas: Pizza[] = [
     short: "Abobrinha grelhada e Polenguinho",
     description:
       "Mozzarella speciale, coberta com fatias de abobrinha grelhada no azeite, pedaços de queijo Polenguinho, salpicada com parmesão, orégano e azeitonas sem caroço.",
-    image: pizzaVeneza,
+    image: fotoZucchini.url,
   },
 ];
 
@@ -196,7 +195,7 @@ export const sweetPizzas: Pizza[] = [
     short: "Banana flambada com conhaque e canela",
     description:
       "Pedaços de banana dourados com açúcar, flambada com conhaque e polvilhada com canela.",
-    image: pizzaPisa,
+    image: fotoBela.url,
     sweet: true,
   },
 ];
