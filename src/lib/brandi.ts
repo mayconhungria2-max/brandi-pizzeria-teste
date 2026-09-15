@@ -1,5 +1,3 @@
-import pizzaPalermo from "@/assets/pizza-palermo.jpg";
-
 import fotoAtum from "@/assets/Atum.webp.asset.json";
 import fotoBambino from "@/assets/Bambino.webp.asset.json";
 import fotoBrandi from "@/assets/brandi.webp.asset.json";
@@ -144,7 +142,7 @@ export const pizzas: Pizza[] = [
     short: "Pepperoni gourmet e pimentões coloridos",
     description:
       "Mozzarella speciale, finas rodelas de pepperoni gourmet, tiras de pimentão verde, vermelho e amarelo, salpicada com parmesão, orégano e azeitonas sem caroço.",
-    image: pizzaPalermo,
+    image: fotoPalermo.url,
   },
   {
     name: "PARIS",
